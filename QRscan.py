@@ -1,6 +1,6 @@
 import qrcode
 
-def generate_qr_code(data, filename):
+def QRscan(data, filename):
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     data = "NAMAN BHARDWAJ IS DASHING"
 
     # Generate QR code image
-    generate_qr_code(data, "qrcode.png")
+    QRscan(data, "qrcode.png")
